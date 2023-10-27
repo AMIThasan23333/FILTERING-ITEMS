@@ -52,8 +52,9 @@ function App() {
           title === selected
       );
     }
+console.log("filteredProducts ", filteredProducts);
+    return filteredProducts?.map(
 
-    return filteredProducts.map(
       ({ img, title, star, reviews, prevPrice, newPrice }) => (
         <Card
           key={Math.random()}
@@ -70,7 +71,7 @@ function App() {
 
   const result = filteredData(products, selectedCategory, query);
   
-
+console.log(result);
   return (
     <div>
     <Sidebar handleChange={handleChange} />

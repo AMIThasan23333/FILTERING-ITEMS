@@ -3,12 +3,12 @@ import { AiFillStar } from 'react-icons/ai';
 import './Products.css'
 import Card from '../Components/Card';
 
-const Products = () => {
+const Products = ({result}) => {
     return (
 <>
     
     <section className="card-container">
-        <Card></Card>
+       {result}
     </section>
 
 
