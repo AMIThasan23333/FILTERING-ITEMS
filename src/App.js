@@ -6,8 +6,9 @@ function App() {
   return (
     <div>
     <Navigation></Navigation>
-    <Products></Products>
     <Recommended></Recommended>
+    <Products></Products>
+
     </div>
   );
 }
